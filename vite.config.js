@@ -6,7 +6,7 @@ import { resolve, dirname } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/nexai/',
+  base: 'nexai',
   resolve: {
     alias: {
       '@': resolve(dirname(fileURLToPath(import.meta.url)), './src'),
