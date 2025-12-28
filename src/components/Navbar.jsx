@@ -5,7 +5,7 @@ import { navLinks, navIcons } from '../constants';
 const Navbar = () => {
   return (
     <nav>
-        <div className="flex flex-row items-justify justify-between navbar-container">
+        {/* <div className="flex flex-row items-justify justify-between navbar-container"> */}
         <div>
             <img src="/images/logo.svg" alt="Logo" />
             <p className="font-bold">Welcome to the Navbar</p>
@@ -29,9 +29,9 @@ const Navbar = () => {
             </ul>
         <time>{dayjs().format('ddd MMM D h:mm A')}</time>
         </div>
-        </div> 
+        {/* </div>  */}
     </nav>
   )
 }
 
-export default N
+export default Navbar
