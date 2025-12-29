@@ -41,6 +41,7 @@ const setupTextHover = (container, type) => {
       });
     };
     
+    const handleMouseLeave = () => letters.forEach((letter) => animateLetter(letter, base, 0.3));
     container.addEventListener('mousemove', handleMouseMove);
     return () => {
       container.removeEventListener('mousemove', handleMouseMove);
@@ -65,7 +66,7 @@ const Welcome = () => {
   }, []);
   return (
     <section id="welcome">
-      <p ref={subtitleRef} className="text-lg text-white-300">{renderText(`Hey, I'm David! Welcome to my`, 'text-3xl font-georama', 100)}</p>
+      <p ref={subtitleRef} className="text-lg text-white-300">{renderText(`Hey, I'm David, founder of Nexai! Welcome to our`, 'text-3xl font-georama', 200)}</p>
       <h1 ref={titleRef} className="mt-7 text-3xl text-white">{renderText('portfolio', 'text-9xl italic font-georama')}</h1>
       <div className='small-screen'>
         <p className="text-white">This Portfolio is designed for desktop/tablet screens only.</p>
